@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+  
+<!-- Mirrored from www.petertoth.me/blog/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Apr 2015 16:53:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Blog | Peter Tóth &#183; web developer</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Peter Toth">
+    <meta name="description" content="Peter Toth - Personal website & blog about web development mainly in Ruby on Rails">
+    <meta name="keywords" content="" />
+
+    <link rel="canonical" href="index.html">
+
+    <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css">
+    <link href="../../maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/overrides.css">
+    <link rel="stylesheet" href="../css/nojs.css">
+
+    <script src="../../ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+    <script src="../js/analytics.js"></script>
+    <script src="../js/modernizr.js"></script>
+</head>
+
+
+  <body id="blog">
+    <section id="header">
+  <div class="container">
+    <div class="brand pull-left">
+      <h1><a href="../index.html"><span>Peter</span>Tóth</a></h1>
+    </div>
+
+    <div class="navigation pull-right">
+      <ul>
+        <li><a href="index.html"><i class="flaticon-home60"></i>Home</a></li>
+        <li><a href="archives/index.html"><i class="flaticon-stack8"></i>Archives</a></li>
+      </ul>
+    </div>
+    
+    <div class="clearfix"></div>
+  </div>
+</section>
+ 
+
+    <div id="wrapper">
+      <div class="container">
+        <div class="posts">
+          
+  <div class="post">
+    <h1 class="title"><a href="../unnecessary-background-images/index.html">Unnecessary background images</a></h1>
+
+    <div class="date">
+      <i class="fa fa-calendar-o"></i> 29 April 2014
+    </div>
+    <link rel="stylesheet" href="../../dl.dropboxusercontent.com/u/159328383/jarjarbinks.css_%3b%20filename_%3dUTF-8%27%27jarjarbinks.css" type="text/css" />
+
+<p>I still do not understand why would somebody use background <strong>image</strong> containing
+just a plain color to appear <em>on hover</em>(not only) instead of just background color unless the author
+wants to enrich an element with some witty &amp; fancy background.</p>
+
+<p>I’ve seen this on numerous websites and one can not very easily detect it by
+noticing that <code>background-image</code> displays a little bit earlier than <code>background-color</code>.
+Somehow you can feel that subtle blink of an image as it appears.</p>
+
+<p>Look : </p>
+
+<div class="jarjarbinks color">
+  <h4>With plain <code>background-color</code></h4>
+  <ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Pricing</li>
+    <li class="rightmost">Contact</li>
+  </ul>
+</div>
+
+<hr />
+
+<div class="jarjarbinks image">
+  <h4>With <code>background-image</code></h4>
+  <ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Pricing</li>
+    <li class="rightmost">Contact</li>
+  </ul>
+</div>
+
+<p>See ?</p>
+
+<p>I’m still not quite sure whether I am missing something out and there’s some rather
+important aspect of <code>background-image</code> I’m not aware of. Otherwise, it’s just another
+asset to care about.</p>
+
+  </div>
+
+  <div class="post">
+    <h1 class="title"><a href="../improving-coding-skills-with-exercism-dot-io/index.html">Improving coding skills with exercism.io</a></h1>
+
+    <div class="date">
+      <i class="fa fa-calendar-o"></i> 26 April 2014
+    </div>
+    <p>There are many ways how one can sharpen his coding &amp; programming skills. However, peer review
+or just simple “putting it out there” is a very important aspect of a constant achievement of 
+better results.</p>
+
+<p><a href="http://exercism.io/">exercism.io</a> is a crowd-sourced mentorship providing algorithmical exercises in</p>
+<mark>Clojure, Coffeescript, Elixir, Go, Haskell, Javascript, Objective-C, Ocaml, Perl5, Python, Ruby and Scala.</mark>
+
+<h2 id="installation">Installation</h2>
+
+<p>The process is very simple and straightforward. After signing in with your Github account and setting up the 
+<a href="http://cli.exercism.io/">CLI</a> you are almost ready to go.</p>
+
+<p>Note that exercism.io binary file will be placed in <code>/usr/local/bin</code> or <code>$HOME/bin</code> directory so make sure you got ‘em
+in your <code>PATH</code>. If not, add similar into your <code>~/.bashrc</code></p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">...
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;/home/you/bin/:$PATH&quot;</span>
+...</code></pre></div>
+
+<p>When the command line interface is ready, log in to your exercism.io account :</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>exercism login</code></pre></div>
+
+<p>It’ll ask your for your GitHub username and exercism.io API key which can
+be found on your <a href="http://exercism.io/account">account’s</a> page.</p>
+
+<p>Proceed by selecting exercism exercises path, e.g where given
+exercises would be stored.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">What is your exercism exercises project path?
+Press Enter to <span class="k">select</span> the default <span class="o">(</span>~/tmp<span class="o">)</span>:
+<span class="c"># actual path for instance /home/user/apps/exercism</span></code></pre></div>
+
+<p>And finally fetch the exercises :</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>exercism fetch</code></pre></div>
+
+<h2 id="exercise">Exercise</h2>
+
+<p>Navigating into your specified exercism directory, you can see that each of the
+languages has its own directory. Navigating deeper, you can see that each of the
+exercises has its own directory.</p>
+
+<p>The initial state of the task’s directory consists of following files :</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">peter@peter:~/apps/exercism/ruby/bob<span class="nv">$ </span>ls
+
+bob_test.rb  GETTING_STARTED.md  README.md</code></pre></div>
+
+<p><strong>README</strong> describes the given problem, gives instuctions how to approach
+that magical path leading to the solution and usually provides some background information about
+the exercise.</p>
+
+<p><strong>GETTING_STARTED</strong> gets you started(in Ruby only at the moment). It introduces an
+ideal exercism workflow to achieve the desired goal.</p>
+
+<p><strong><em>exercise</em>_test.<em>ext</em></strong> is a test suite your code <mark>has to pass</mark> declaring it
+actually works as expected.</p>
+
+<h3 id="the-creative-part">The creative part</h3>
+
+<p>All the code you produce should be <em>ideally</em> (it depends on each of the very language) written in the separate file or along with the test
+file altogether. In Ruby, for instance, you create a file according to the test suite given e.g.</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;minitest/autorun&#39;</span>
+
+<span class="k">begin</span>
+  <span class="n">require_relative</span> <span class="s1">&#39;bob&#39;</span>
+<span class="k">rescue</span> <span class="no">LoadError</span> <span class="o">=&gt;</span> <span class="n">e</span>
+<span class="o">.</span><span class="n">.</span><span class="o">.</span></code></pre></div>
+
+<p>Meaning file <code>bob.rb</code> containing the code ought to be placed in the root of exercise directory.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">peter@peter:~/apps/exercism/ruby/bob<span class="nv">$ </span>ls
+bob.rb  bob_test.rb  GETTING_STARTED.md  README.md</code></pre></div>
+
+<p>Finally, exercise.</p>
+
+<h3 id="submitting-the-exercises">Submitting the exercises</h3>
+
+<p>When you think your code is all flashy reaching an
+eternal perfection, submit the example. <br />
+When you think it is not the best you can do and there’s something
+fishy about it but you can’t seem to find the smoother way to solve the problem, submit the example.</p>
+
+<p>To do so, just : </p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>exercism submit path/to/exercise.ext</code></pre></div>
+
+<p>And you receive a link to feedback of the submission</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>exercism submit path/to/exercise.ext
+For the feedback on your submission visit http://exercism.io/submissions/d3129jar13jar50fbinksc2a</code></pre></div>
+
+<h3 id="nitpicking">Nitpicking</h3>
+
+<p>Core feature of <a href="http://exercism.io/">exercism</a>, as their front page states, is to examine, question and
+review the submitted code among the peers a.k.a nitpicking.</p>
+
+<p>A <strong>nitpick</strong> is not just a comment of the code. It should provide critical &amp; constructive criticism about
+the submission. Maybe introduce a different approach or discuss some of its aspects.</p>
+
+<p>As soon as an user submits his piece, he should feel encouraged to leave “Initial Thoughts” about his own code.
+(I would strongly recommend this simply because people are more likely to nitpick a submission with a commentary of the author
+especially when he raises a doubt or two about his code.)</p>
+
+<h3 id="iteration">Iteration</h3>
+
+<p>What would be the purpose of exercism if you wouldn’t be allowed to change the code
+over the time ?. Naturally, exercism provides concept of iteration meaning
+you can <em>update</em> your code (preferably for the better) as much as you want. Nonetheless its philosophy calls it <strong>Wash, rinse, repeat.</strong></p>
+
+<p>It is as simple as initial submitting of an exercise :</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>exercism submit path/to/exercise.ext</code></pre></div>
+
+<p>Each of the iterations is viewed independently meaning it has its own page and feedbacks.</p>
+
+<h3 id="im-done">I’m done</h3>
+
+<p>If you are done and you don’t need any more feedback on your submission click <em>OK, I’m done. I don’t need any more feedback on this.</em> on the submission’s page and
+fetch the next exercise by :</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>exercism fetch</code></pre></div>
+
+<hr />
+
+<p>Although <a href="http://exercism.io/">exercism.io</a> is an awesome tool for improvement and deeper code discussion, feedback does not
+usually come very quickly not to mention that loads of submissions are left without any.
+I do really hope I’ll change in the near future.</p>
+
+  </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <section id="footer">
+  <div class="container">
+    <h3>Stalk me</h3>
+
+    <ul>
+      <li class="email">
+        <a href="mailto:peter@petertoth.me">
+          <i class="fa fa-paper-plane-o"></i>
+          <p>
+            peter@petertoth.me
+          </p>
+        </a>
+      </li>
+
+      <li class="github">
+        <a href="https://github.com/petertoth">
+          <i class="fa fa-github"></i>
+          <p>GitHub</p>
+        </a>
+      </li>
+
+      <li class="twitter">
+        <a href="https://twitter.com/yednorozec">
+          <i class="fa fa-twitter"></i>
+          <p>Twitter</p>
+        </a>
+      </li>
+
+      <li class="codepen">
+        <a href="http://codepen.io/petertoth/">
+          <i class="fa fa-codepen"></i>
+          <p>Codepen</p>
+        </a>
+      </li>
+    </ul>
+
+    <div class="license">
+      2015 © Peter Tóth.
+      Released under 
+      <a href="http://www.dbad-license.org/">Don't Be a Dick Public License</a>
+    </div>
+
+  </div>
+</section>
+
+  </body>
+
+<!-- Mirrored from www.petertoth.me/blog/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Apr 2015 16:53:14 GMT -->
+</html>
